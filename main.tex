@@ -14,10 +14,19 @@
 
 \setlength{\columnsep}{2em}
 
+\titleformat
+  {\subsubsection}
+  [runin]
+  {\normalfont}
+  {\thesubsubsection}
+  {1em}
+  {}
+
 \begin{document}
 \maketitle
 \input{introduction.tex}
 \input{game_equipment.tex}
 \input{basic_concepts}
 \input{sequence_of_play}
+\input{supply}
 \end{document}
