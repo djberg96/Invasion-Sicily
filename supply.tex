@@ -65,3 +65,90 @@ Axis on-map supply sources are:
 \end{enumerate}
 
 \subsubsection{}
+Allied on-map supply sources are:
+\begin{enumerate}[label=\alph*.]
+    \item any Allied-controlled port occupied by a Port or engineer unit.
+    \item any coastal hex occupied by a Beach unit.
+\end{enumerate}
+
+\subsubsection{}
+Road Nets
+\begin{enumerate}[label=\alph*.]
+    \item A friendly road net is any continuous series of connected main or minor road hexes which lead to a friendly supply source (note differences between main and minor road movement).
+    \item The Allied road net cannot be more than 40 \textit{road movement points} in length.
+    
+    \textbf{Exception:} \textit{Allied units cannot use Road Nets to trace supply to Beach units [5.5.5b].}
+    
+    \item The Axis road net can be of unlimited length.
+\end{enumerate}
+
+\subsubsection{Weather and Tracing Supply}
+\begin{enumerate}[label=\alph*.]
+    \item Mud weather reduces traceable non-road hexes from five to four. The Road Net is not affected by Mud.
+    \item Storm conditions do not affect tracing supply.
+\end{enumerate}
+
+\subsection{Supply Sources}
+\subsubsection{}
+A source friendly to one player is not friendly to the other player.
+
+\subsubsection{}
+Any number of Allied-controlled ports can be made operational on a given turn (subject to Port or Engineer unit availability) [6.2.4]. Any port can be deactivated and made operational any number of times during a scenario.
+
+\subsection{Supply Source Capacity}
+\subsubsection{}
+Excess supply capacity at one supply source cannot be transferred to another supply source, nor can it be saved for use on future game turns.
+
+\subsubsection{}
+Allied Beach and Port units are always in supply and do not count against Allied supply capacity.
+
+\subsubsection{}
+For an Allied-controlled port to be operational (function as a supply source), an Allied Engineer or Port unit must occupy the port hex during the Supply Determination Phase.
+
+\begin{enumerate}[label=\alph*.]
+    \item Port Capacity is the maximum number of units that can be supplied through that port in any one Supply Determination Phase.
+    \item A port can supply only as many units as its current augmented capacity allows. Players must trace to another supply source for the excess units or they will be judged OoS and receive OoS markers.
+    \item The Port Supply Capacity of any friendly operational Allied port is composed of:
+    \begin{enumerate}[label=\arabic*.]
+        \item the printed port supply capacity number
+        \item less any Axis Port Demolition marker totals [5.5.7a]
+        \item plus Allied Port unit port supply capacity augmentation values [5.5.3f].
+    \end{enumerate}
+    \item Storms do not reduce port capacities.
+    \item The Allied player can rebuild ports. During each Engineering Phase, the Allied player can remove one Port Demolition marker (or replace a -4 marker with a -2 marker) from one port containing an Allied engineer or Port unit. Even if several ports qualify for demolition removal, only one port per turn can have a marker removed.
+    \item Each Allied Port unit can increase a port's supply capacity by using its port supply capacity augmentation value (the port engineering and rebuilding capabilities contained in each unit). As many Port units as desired can be added (over time) to the same port, but their combined augmentation values cannot exceed that port's printed capacity (modified by Port Demolition markers). Excess port capacity augmentation points are ignored.
+    
+    \textbf{Example:} \textit{It is now the Supply Determination Phase of GT 8. The port of Palermo (hex 2407) is Allied-controlled. The US 20 and 531 Port units occupy the hex. Palermo has a printed port supply capacity of eight; however one -2 and one -4 Axis Port Demolition marker remain in the Palermo hex, which reduce Palermo's printed port capacity to an adjusted level of two.}
+    
+    \textit{The US 20 and 531 Port units have a combined port supply capacity augmentation value of +4 (each Port unit has a +2 value). Only two of those four points could be used to augment Palermo's adjusted supply capacity of two, allowing Palermo to serve as a supply source to four Allied ground combat units. The two excess port supply capacity augmentation points are ignored for this turn.}
+    
+    \textit{The Allied player will probably elect in the GT 8 Engineering Phase to remove the -2 Port Demolition marker from Palermo because the port units are there to make removal possible. If removed, on GT 9 Palermo's adjusted supply capacity would be four, and all four of the Port unit's port supply capacity augmentation points could be utilized, so that Palermo could serve as a supply source for eight Allied ground combat units.}
+    
+    \item On the turn following the Allied capture of Catania or Palermo, during the Supply Decision Phase flip the British 6 Port unit and US 1051 Port unit from their +4 Port Capacity Augmentation sides to their +5 sides.
+    
+    \textbf{Design Note: } \textit{The increase represents Allied use of local Sicilian port labor.}
+\end{enumerate}
+
+\subsubsection{Allied Beach Units}
+\begin{enumerate}[label=\alph*.]
+    \item Subject to their printed supply capacity numbers, Beach units convert the coastal hexes into supply sources for Allied ground combat units of either nationality able to trace valid LOC's to them.
+    \item Units can only trace a five-hex LOC (only four hexes during Mud weather) to Beach units, because Beach units cannot support a road net. When tracing the LOC, count the coastal hex, but do not count the unit hex.
+    \item Storm turns reduce the printed supply capacity of all Beach units by one-half (rounded down).
+    \item Only one Beach unit can occupy any given coastal hex.
+\end{enumerate}
+
+\subsubsection{}\textbf{Axis Supply Capacity}
+\begin{enumerate}[label=\alph*.]
+    \item Calabria north map edge hexes: Unlimited supply.
+    \item Axis friendly operational ports: Printed supply capacity number. Port units aren't required (local Italians provide the necessary labor and materials).
+    
+    \textbf{Exception 1:} \textit{ In Scenarios 3 and 4, if the port of Reggio Calabria cannot trace supply to the north map edge, reduce all Sicily port capacities to two and Reggio Calabria port capacity to four (because almost all Axis Supply arrived via the overland routes).}
+    
+    \textbf{Exception 2:} \textit{Axis Sicily Evacuation [13.6.2f] reduces all Axis Sicily port capacities to zero.}
+\end{enumerate}
+
+\subsubsection{}\textbf{Axis Port Demolition}
+\begin{enumerate}[label=\alph*.]
+    \item On each game turn the Axis player can place one Port Demolition marker per Engineering Phase on a port occupied by a German ground combat unit. Each Port Demolition marker reduces that port's supply capacity by two units. More than one marker may be placed on a German occupied port; however, a port's printed supply capacity cannot be reduced to less than minus one. The -4 Port Demolition markers may be used only to consolidate -2 Port Demolition markers. The Axis player can intentionally place Axis units out of supply through port demolition.
+    \item The Allied player can remove Port Demolition markers [5.5.3e].
+\end{enumerate}
