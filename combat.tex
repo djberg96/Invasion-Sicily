@@ -74,3 +74,92 @@ An artillery unit can never be the lead unit in the attack.
 
 \subsubsection{}
 The defending player can designate any unit in the defender hex to be the lead defender unit except for artillery units contributing their support strengths to the combat (that is, an artillery unit contributing its defense strength in a defender hex could be the lead defender unit).
+
+\subsection{Combat Resolution}
+
+\textbf{Procedure}
+
+The attacking player resolves all declared combats in any order desired, using the following sequence for each attack.
+
+\begin{enumerate}[label=\textbf{\Roman*.}]
+    \item \textbf{Compute Attack Strength}
+    \begin{enumerate}[label=\alph*.]
+        \item Attacker flips all untried units in hexes bearing Declared Combat markers.
+        \item Attacker totals the attack strengths of all non-artillery units in each hex bearing a Declared Combat marker. Some units or stacks may be halved. Halving is cumulative (some units/stacks may be halved more than once). Fractions are always dropped after each halving operation. Halving is done in the following order:
+        \begin{itemize}
+            \item Armor units attacking through road hexsides into mountain or alpine hexsides.
+            \item Units bearing Disrupted or OoS markers.
+            \item Units/stacks in non-lead hexes that fail ER checks for combat coordination [9.2.3].
+        \end{itemize}
+        \item Attacker designates qualifying artillery units [10.1.2 and 10.1.3].
+        \item Attacker makes necessary artillery ER checks. One artillery unit stacked in the lead hex may contribute support strength without making an ER check. All others that pass their required ER checks will have their support strength added to the total attack strength [10.1.1c]. Place Fired markers on all designated artillery units [10.1.1.d].
+        
+        \textbf{Note 1:} \textit{Placing a Fired marker on an artillery unit indicates its support has been dedicated to one combat. It cannot provide support to any subsequent combats in the Combat Phase.}
+        
+        \textbf{Note 2:} \textit{Terrain does not halve artillery support strengths. Artillery can fire over terrain impassable to it.}
+        \item Attacker allocates available air support points, makes a coordination die roll for them, and receives all allocated points if allowed by the die roll [10.2].
+        \item Attacker (if Allied) allocates available naval support points, makes a coordination roll for them, and receives all allocated points if allowed by the die roll [10.3].
+        
+        \textbf{Note:} \textit{The total of artillery/air/naval support points eligible to support a given combat cannot exceed the total attack strength committed to that combat. Excess support points are lost.}
+    \end{enumerate}
+    \item \textbf{Compute Defense Strength}
+    \begin{enumerate}[label=\alph*.]
+        \item Defender flips all untried units in the defender hex.
+        \item Defender totals the defense \textit{and} support strengths of all units in the defender hex. Place Fired markers on all designated defender artillery units.
+        
+        \textbf{Note:} \textit{Any artillery units contributing their support strength in the defender hex cannot also contribute their defense strength (and vice-versa)}
+        \item Defender designates other qualifying artillery units to provide support strengths and makes ER checks for them [10.1.2] and [10.1.4]. Units that pass their required ER checks can provide support [10.1.1c]. Place a Fired marker on each artillery unit after making its ER check [10.1.1d].
+        
+        \textbf{Note:} \textit{Terrain does not halve artillery support strengths. Artillery can fire over terrain impassable to it.}
+        \item Defender allocates available air support points, makes a coordination die roll for them, and receives all allocated points if allowed by the die roll [10.2].
+        \item Defender (if Allied) allocates available naval support points, makes a coordination die roll for them, and receives all allocated points if allowed by the die roll [10.3].
+        \textbf{Note:} \textit{The total of artillery/air/naval support points eligible to support a given combat cannot exceed the total defense strength committed to that combat. Excess support points are lost.}
+    \end{enumerate}
+    \item \textbf{Combat Odds Ratio}
+    \par
+    Divide the total attacking strength by the total defending strength to arrive at a combat odds ration. Always round off the ratio in favor of the defender to the nearest ratio listed on the CRT.
+    
+    \textbf{Example:} \textit{29 to 10 is 2:1 odds.}
+    \item \textbf{Armor Effects Shift}
+    \par
+    When the lead unit of a declared attack is armored, the attacker receives a one column shift to the right on the CRT (that is, a 2:1 attack would become a 3:1 attack) if the defender hex:
+    \begin{enumerate}[label=\alph*.]
+        \item is in clear terrain,
+        \item contains no strongpoint,
+        \item contains no armor or antitank unit, and
+        \item no attacking armored unit is attacking across a river hexside.
+    \end{enumerate}
+    
+    \item \textbf{Determine DRMs for}
+    
+    \begin{enumerate}[label=\alph*.]
+        \item Terrain [9.3 and Terrain Effects Chart]
+        \item Amphibious Assault [13.2.4d]
+        \item Differing Allied Nationalities [14.2.2]
+        \item Strongpoint in defender hex [16.1.1]
+        \item \textbf{ER Differential Calculation.} Compare the ER of the lead in the lead attack hex to the lead unit in the defender hex. If a lead unit bears a Disrupted marker, its ER is reduced by two. If an Italian unit is the lead unit after the fall of Mussolini, its ER is reduced by one. These two reductions are cumulative: an Italian lead unit could conceivably have its ER reduced by three. If defender lead unit ER is better than attacker lead unit ER, a positive (+) DRM results; if Defender is less than Attacker, a negative (-) DRM results.
+        
+        \textbf{Example:} \textit{Attacker lead unit has ER 5 and defender lead unit ER is 7. Subtract Attacker (5) from Defender (7). This results in a +2, meaning a +2 DRM, so the Attacker must enter plus two (+2) into his DRM computations.}
+        
+        \item \textbf{High Odds Attacks.} Those attacks made at odds greather than 8 to 1 receive favorable DRMs [see CRT].
+    \end{enumerate}
+    
+    \item \textbf{Netting DRMs}
+    
+    Net out all the Attacker and Defender DRMs. Each +1 DRM offsets a -1 DRM. The positive or negative DRM total remaining after offsetting is the final DRM. Final DRMs can never be greater than +3 or -3; disregard final DRM value beyond these limits.
+    
+    \item \textbf{Roll One Die}
+    
+    Cross-index the numerical result with the odds column on the CRT. If the attacker receives armor effects [9.4.1 section IV], shift the odds column one column to the right. Adjust the die roll by the net DRM. Apply the combat result to the involved units before going on to any other combat.
+    
+    In any combats with final odds worse than 1:3, the attacking units are automatically eliminated ("E" result); the defending force suffers nothing. Combat odds greater than 8:1 are resolved at 8:1. The attacker cannot voluntarily reduce combat odds.
+    
+    \textbf{Example:} \textit{He cannot declare 2:1 odds when he has 3:1 odds.}
+\end{enumerate}
+
+\subsection{Combat Results [CRT]}
+\subsubsection{}
+Non-adjacent artillery units suffer no combat results; they are not reduced, retreated, or advanced after combat.
+
+\subsubsection{\textbf{Extracting losses}}
+When called for on the CRT, a unit takes losses in the form of combat strength levels (also called "steps"). A combat unit possesses eitehr one or two steps. A unit loses steps in this order: Full Strength Level, Half Strength Level (inverted). Full strength level printed on the front of the unit. Half strength level is the (lower) value on the reverse side of the unit. Many units have only a Full Strength level. A unit eliminated or obliged to lose more steps than it has available is removed from play and set aside.
