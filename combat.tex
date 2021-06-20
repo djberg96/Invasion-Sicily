@@ -163,3 +163,87 @@ Non-adjacent artillery units suffer no combat results; they are not reduced, ret
 
 \subsubsection{\textbf{Extracting losses}}
 When called for on the CRT, a unit takes losses in the form of combat strength levels (also called "steps"). A combat unit possesses eitehr one or two steps. A unit loses steps in this order: Full Strength Level, Half Strength Level (inverted). Full strength level printed on the front of the unit. Half strength level is the (lower) value on the reverse side of the unit. Many units have only a Full Strength level. A unit eliminated or obliged to lose more steps than it has available is removed from play and set aside.
+
+\subsubsection{}
+When a loss of combat strength is required, the owner removes the indicated number of combat strength levels from the total force, not from each unit in that force.
+
+\textbf{Note 1:} \textit{The lead unit of the land attacking stack and the lead defender unit must take the first step of any combat step loss required by the CRT. Additionally, the lead defender unit must take the step loss for No Retreat if the CRT did not mandate a combat step loss.}
+
+\textbf{Note 2:} \textit{If one side has fewer steps to lose than required by the numerical step loss, any step loss required for the other side is reduced by one.}
+
+\subsubsection{}
+Some eliminated units may later be returned to play on the map through the replacement procedure [15.0].
+
+\subsection{Retreats}
+
+When the combat result requires units to retreat, the owning player immediately moves the affected units individually (or as a stack [9.6.9]) one or two hexes from their defender hex. If the unit is unable to retreat within the following restrictions, it is eliminated.
+
+\subsubsection{}
+A unit cannot retreat across prohibited terrain hexside, off the edge of the mapsheet, or over enemy units. A unit cannot retreat to a hex that it could not normally enter during its Movement Phase.
+
+\textbf{Exception:} \textit{Emergency Evacuation [13.3] and Calabria north map edge [7.6.5a].}
+
+\subsubsection{}
+A unit can retreat through a hex containing friendly units if it means (temporarily) a violation of stacking limits; however, a unit cannot end its retreat in violation of stacking limits. If it does, it is eliminated.
+
+\textbf{Design Note:} \textit{Elimination represents destruction of combat units due to disorganization rather than outright combat loss.}
+
+\subsubsection{}
+Units can end retreat in friendly occupied hexes in enemy ZOCs.
+
+\subsubsection{}
+Units can end retreat in defender hexes where combat has not yet been resolved; they contribute no defense strength to that combat, nor can they act as lead defender units. They do, however, suffer all adverse defender combat results when the new combat is resolved.
+
+\subsubsection{}
+A unit cannot retreat to an out-of-supply position unless no alternate position exists within stacking limits.
+
+\subsubsection{}
+If both Emergency Evacuation and an allowable land retreat path are available to a retreating ground combat unit, the Allied player chooses which option to take. Port/Beach units must always undergo Emergency Evacuation.
+
+\subsubsection{\textbf{No Retreat Option}}
+
+In some cases, units would not retreat.
+
+\begin{enumerate}[label=\alph*.]
+    \item The No Retreat option is limited to one specific situation for each side.
+    \textbf{Axis:} A unit or stack occupying a strongpoint when attacking or defending may attempt the No Retreat option.
+    
+    \textbf{Allied:} Beach/Port units plus any other Allied units stacked with them may attempt the No Retreat option.
+    
+    \item A player always has the option to retreat his force normally rather than attempt the No Retreat procedure.
+    
+    \item If the No Retreat option can be exercised, perform the following procedure:
+    
+    \begin{enumerate}[label=\arabic*)]
+        \item First, remove any numerical step losses mandated by the combat result. If necessary, flip the lead unit to its reduced strength side.
+        \item If the lead unit is eliminated instead of being reduced, the player exercising the No Retreat option designates a new lead units.
+        \item Make an ER check against the lead units.
+        \item If the lead unit passes the ER check, then the unit/stack does not retreat. That unit/stack must, however, lose one additional step (If the lead unit did not lose a step as a result of combat, it must take this step loss. Otherwise, any unit in the stack can take the loss). If the additional step lost is the last step in the hex, the attacker cannot advance after combat into the vacated hex.
+        \item If the unit fails the ER check, conduct retreat/emergency evacuation normally.
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{\textbf{Retreat Through Enemy ZOC}}
+
+All units as their first option must choose not to retreat through any sort of enemy ZOC, contested or non-contested, unless no alternate path exists. A unit can retreat through a hex occupied by one or more friendly units even if enemy units are projecting a ZOC into that hex (because your unit controls the hex it occupies). Your unit can end its retreat in a friendly occupied hex even if that hex is an an enemy ZOC.
+
+\subsubsection{\textbf{Special Retreat Through Enemy ZOC}}
+
+\begin{enumerate}[label=\alph*.]
+    \item Units are automatically eliminated if their only path of retreat is through tow or more vacant hexes in enemy ZOCs. However, a unit that must retreat through one vacant hex in an enemy ZOC may do so. It must retreat two hexes and may be reduced or eliminated in the process.
+    \item Artillery units cannot conduct this procedure. A player may choose to eliminate his artillery to allow his remaining units to conduct this retreat.
+    
+    \textbf{Exception:} \textit{Allied armored artillery can conduct special retreat through enemy ZOC.}
+\end{enumerate}
+
+\textbf{Procedure}
+
+\begin{enumerate}[label=\Roman*.]
+    \item Conduct the two hex retreat. Retreating stacks must remain stacked together.
+    \item When the retreat is completed, the owner conducts an ER check on the retreating unit. If it is a stack, he conducts an ER check on the lead unit of that stack.
+    \item If it fails, that unit (or lead unit of the stack) takes a one step loss. If it passes, there is no loss. Add two (+2) DRM to the ER check if the retreating stack has any unit with a Disrupted marker.
+\end{enumerate}
+
+\subsection{Advance after Combat}
+
+When the original defender hex has been vacated as a result of combat, the attacking units can advance into the vacant hex.
