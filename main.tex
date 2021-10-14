@@ -15,6 +15,17 @@
 \author{Vance von Borries}
 
 \setlength{\columnsep}{2em}
+\setcounter{secnumdepth}{4}
+
+\titlespacing{\paragraph}{0pt}{1em}{\medskipamount}
+
+\titleformat
+  {\paragraph}
+  [runin]
+  {\normalfont}
+  {\theparagraph}
+  {1em}
+  {}
 
 \titleformat
   {\subsubsection}
@@ -39,4 +50,5 @@
 \input{air_operations}
 \input{naval_operations}
 \input{amphibious_invasion}
+\input{special_rules}
 \end{document}
